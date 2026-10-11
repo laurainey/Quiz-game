@@ -31,7 +31,7 @@ timer_left = 10
 question_count = 0
 question_index = 0
 is_game_over = False
-qestion_file = "questions.txt"
+question_file = "questions.txt"
 marquee_msg = ""
 
 questions = []
@@ -60,8 +60,45 @@ def draw ():
         screen.draw.textbox(f"Goodbye,goodbye", answer_box, color= "#530854")
 
 def update():
-    pass
+    move_marquee()
+
+def move_marquee():
+    global marquee_box
+    marquee_box.x = marquee_box.x - 2
+    if marquee_box.right < 0 :
+        marquee_box.left = WIDTH
+
+def read_question_file():
+    global question_count, questions
+    q_file = open(question_file,"r")
+    for question in q_file:
+        questions.append(question)
+        question_count += 1
+    q_file.close()
+
+def read_next_question():
+    global question_index
+    question_index += 1
+    return questions.pop(0).split(",")
+
+
+def on_mouse_down(pos):
+    index = 1
+    for answer_box in answer_boxes:
+        if answer_box.collidepoint(pos):
+            if index is int(question[5]):
+                correct_answer()
+
+            else:
+                game_over()
+        index += 1
+        
 
 
 
+
+
+
+read_question_file()
+question = read_next_question()
 pgzrun.go()
