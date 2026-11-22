@@ -1,0 +1,15 @@
+
+What is the capital of England?, Dubai, London, Portonovo,Beijing,2
+What is the smallest city in the world?,Hum,Tokyo,Haiti,Washington,1
+What is the biggest city in the world?, Jakarta, Hum, District of Columbia,Chincoteague,1
+What is a 13 to the power of 2?, 2,168,169,196,3
+What does 12 to the power of two equal to?,143,244,444,144,4
+In what continent is Egypt in?,North America,Europe,Antartica,Africa
+What is 10 to the power of 3?, 10, 1000,100,1000000,2
+What is 53 x 11?, 531,546,583,653,3
+What is the capital of  South Korea?,Soeul,Beijing,Cairo,Bangkok
+What is the capital of thailand?,Nairobi,Madrid,Bangkok,Lisbon,3
+
+
+
+
